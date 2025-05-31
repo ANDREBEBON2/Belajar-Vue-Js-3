@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from "vue";
-import Quis from "./data/quiz.json";
+import Quis from "../data/quiz.json";
 import Card from "@/components/Card.vue";
 
 const quis = ref(Quis);

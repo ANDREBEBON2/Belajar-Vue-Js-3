@@ -5,7 +5,7 @@ const showModal = ref(false);
 
 const memo = ref("");
 const bankMemo = ref([]);
-const ErrorMessage = ref("");
+const ErrorMessage = ref(false);
 const SuccessMessage = ref(false);
 
 function buttonShow() {
@@ -17,7 +17,7 @@ function buttonHidden() {
 }
 function saveMemo() {
   if (!memo.value) {
-    ErrorMessage.value = "Memo is required.";
+    ErrorMessage.value = true;
     return;
   }
   bankMemo.value.push({
@@ -26,7 +26,7 @@ function saveMemo() {
     date: new Date().toLocaleDateString("id-ID"),
     bg: randomCollor(),
   });
-  ErrorMessage.value = "";
+  ErrorMessage.value = false;
   memo.value = "";
   showModal.value = false;
   notify();
@@ -50,10 +50,10 @@ function randomCollor() {
   <main class="container relative w-full h-screen">
     <!-- Heading -->
     <div class="flex items-center justify-between py-2">
-      <h1 class="text-6xl font-bold text-gray-900">Memo</h1>
+      <h1 class="text-4xl font-bold">Memo</h1>
       <button
         @click="buttonShow"
-        class="px-2 py-2 text-white transition-all duration-150 bg-gray-800 rounded-full outline-none hover:scale-95"
+        class="px-2 py-2 transition-all duration-150 bg-white rounded-full outline-none text-zinc-900 hover:scale-95"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +72,8 @@ function randomCollor() {
       </button>
     </div>
     <!--./ Heading -->
+
+    <!-- Notify -->
     <div class="fixed left-0 z-10 h-10 px-3 w-fit top-1">
       <h1
         class="px-4 py-2 text-xl font-bold text-white transition-all duration-500 ease-in-out transform -translate-x-full bg-green-400 bg-opacity-50 rounded ps-3"
@@ -80,6 +82,8 @@ function randomCollor() {
         Data berhasil ditambah...
       </h1>
     </div>
+    <!-- ./Notify -->
+
     <!-- Card -->
     <div class="grid grid-cols-4 gap-2 mt-3">
       <div
@@ -108,7 +112,7 @@ function randomCollor() {
       class="fixed top-0 left-0 z-10 flex items-center justify-center w-full h-screen bg-black bg-opacity-50"
     >
       <div
-        class="relative flex flex-col items-center justify-center px-10 py-10 bg-gray-800 rounded w-fit gap-y-1"
+        class="relative flex flex-col items-center justify-center px-10 py-10 rounded bg-zinc-800 w-fit gap-y-1"
       >
         <!-- Label -->
         <div class="w-full">
@@ -121,7 +125,7 @@ function randomCollor() {
         <!-- TextArea -->
         <textarea
           v-model="memo"
-          class="block rounded outline-teal-600"
+          class="block rounded outline-none focus:outline-teal-600 text-zinc-900 ps-1 pe-1"
           name="memo"
           id="memo"
           cols="30"
@@ -130,8 +134,8 @@ function randomCollor() {
         <!-- ./TextArea -->
 
         <!-- Validasi -->
-        <div class="w-full">
-          <p class="text-sm font-bold text-red-700">{{ ErrorMessage }}</p>
+        <div class="w-full" v-if="ErrorMessage">
+          <p class="text-sm font-bold text-red-700">Memo Is Required</p>
         </div>
         <!-- ./Validasi -->
 

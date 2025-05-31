@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+import { RouterView } from "vue-router";
+import Navbar from "@/components/element/Navbar.vue";
+</script>
 
 <template>
-  <main class="container h-screen mx-auto">
-    <h1>Hallo</h1>
+  <Navbar />
+  <main class="container h-screen mx-auto mt-14">
+    <div class="">
+      <RouterView />
+    </div>
   </main>
 </template>
