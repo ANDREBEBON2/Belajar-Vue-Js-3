@@ -1,12 +1,17 @@
 <script setup>
 import { ref, watch } from "vue";
 import Quis from "./data/quiz.json";
+import Card from "@/components/Card.vue";
+
 const quis = ref(Quis);
 const search = ref("");
 
 watch(search, () => {
   quis.value = Quis.filter((q) => {
-    return q.title.toLowerCase().includes(search.value.toLowerCase());
+    return (
+      q.title.toLowerCase().includes(search.value.toLowerCase()) ||
+      q.questions.length.toString().includes(search.value)
+    );
   });
 });
 </script>
@@ -30,34 +35,15 @@ watch(search, () => {
         </div>
       </div>
       <!-- ./Heading -->
-
       <!-- Content -->
       <div class="w-full mt-10">
         <div
           class="grid grid-cols-1 gap-x-5 gap-y-7 md:grid-cols-3 lg:grid-cols-4"
         >
-          <!-- Card -->
-          <div
-            class="overflow-hidden rounded-t-sm shadow shadow-black"
-            v-for="q in quis"
-            :key="q.id"
-          >
-            <!-- Image -->
-            <img
-              class="object-cover w-full h-72"
-              :src="q.image"
-              :alt="q.title"
-            />
-            <!-- ./Image -->
+          <!-- component card -->
+          <Card v-for="q in quis" :key="q.id" :data="q" />
 
-            <!-- Text -->
-            <div class="px-2 py-5 mt-3 space-y-3">
-              <h1 class="text-3xl font-semibold">{{ q.title }}</h1>
-              <h2>{{ q.questions.length }} Questions</h2>
-            </div>
-            <!-- ./Text -->
-          </div>
-          <!-- ./Card -->
+          <!-- ./component card -->
         </div>
       </div>
       <!-- ./Content -->
