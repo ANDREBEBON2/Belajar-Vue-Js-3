@@ -1,0 +1,459 @@
+[
+  {
+    "id": 1,
+    "title": "Belajar JavaScript",
+    "image": "https://www.karier.mu/blog/wp-content/uploads/2021/12/programmin.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "text": "Apa fungsi dari 'use strict' dalam JavaScript?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Mengaktifkan mode ketat untuk penulisan kode",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Menonaktifkan semua error",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Menambahkan komentar",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Menghapus variabel",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Bagaimana cara mendeklarasikan variabel di JavaScript?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "var, let, const", "correct": true },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "int, float, string",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "define, set, create",
+            "correct": false
+          },
+          { "id": 4, "label": "D", "text": "new, old, temp", "correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Apa output dari console.log(typeof [])?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "array", "correct": false },
+          { "id": 2, "label": "B", "text": "object", "correct": true },
+          { "id": 3, "label": "C", "text": "list", "correct": false },
+          { "id": 4, "label": "D", "text": "undefined", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Belajar HTML",
+    "image": "https://diginusa.com/wp-content/uploads/2024/04/Mulai-Petualangan-Masa-Depanmu-di-Dunia-Coding.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "text": "Tag HTML untuk membuat tautan adalah?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "<a>", "correct": true },
+          { "id": 2, "label": "B", "text": "<link>", "correct": false },
+          { "id": 3, "label": "C", "text": "<href>", "correct": false },
+          { "id": 4, "label": "D", "text": "<url>", "correct": false }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Atribut 'alt' pada tag <img> digunakan untuk?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Menambahkan teks alternatif jika gambar tidak dapat ditampilkan",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Menentukan ukuran gambar",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Menambahkan link ke gambar",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Mengatur posisi gambar",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Elemen <head> dalam HTML biasanya berisi?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Informasi meta, link CSS, dan title",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Isi konten utama",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Gambar dan tabel",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Script luar saja",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "HTML adalah singkatan dari?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Hyper Text Markup Language",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Home Tool Markup Language",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Hyperlink and Text Markup Language",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Hyper Tool Mark Language",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Belajar CSS",
+    "image": "https://media.istockphoto.com/id/1124838925/id/vektor/jendela-aplikasi-kode-pemrograman.jpg?s=612x612&w=0&k=20&c=iz7NV1EIxkLTWTP91f_hOEV3gobVXagS0VzadXonc4Q=",
+    "questions": [
+      {
+        "id": 1,
+        "text": "Properti CSS untuk mengubah warna teks adalah?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "color", "correct": true },
+          { "id": 2, "label": "B", "text": "text-color", "correct": false },
+          { "id": 3, "label": "C", "text": "font-color", "correct": false },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "background-color",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Bagaimana cara membuat teks menjadi tebal di CSS?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "font-weight: bold;",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "text-style: bold;",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "font-style: bold;",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "text-weight: bold;",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Belajar React",
+    "image": "https://miro.medium.com/v2/resize:fit:740/0*4HxmoUyeXbMQDOtu.png",
+    "questions": [
+      {
+        "id": 1,
+        "text": "Apa itu JSX dalam React?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Sintaks untuk menulis elemen HTML dalam JavaScript",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Library untuk routing",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Fungsi untuk mengelola state",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Metode untuk menghubungkan ke API",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Hook React yang digunakan untuk mengelola state adalah?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "useState", "correct": true },
+          { "id": 2, "label": "B", "text": "useEffect", "correct": false },
+          { "id": 3, "label": "C", "text": "useContext", "correct": false },
+          { "id": 4, "label": "D", "text": "useReducer", "correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Apa tujuan dari useEffect?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Menjalankan efek samping seperti fetch API",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Mengatur routing",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Mengganti state langsung",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Menambah className",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "React dibuat oleh?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "Facebook", "correct": true },
+          { "id": 2, "label": "B", "text": "Google", "correct": false },
+          { "id": 3, "label": "C", "text": "Microsoft", "correct": false },
+          { "id": 4, "label": "D", "text": "Twitter", "correct": false }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Apa yang dilakukan ReactDOM.render()?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Merender komponen ke DOM",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Membuat server baru",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Menyimpan state",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Menghubungkan ke API",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Belajar Node.js",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAjrXp6fdlJi7LZIv0ohOPBS0Jahq6NjZuw&s",
+    "questions": [
+      {
+        "id": 1,
+        "text": "Node.js berjalan di lingkungan?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "Server-side", "correct": true },
+          { "id": 2, "label": "B", "text": "Client-side", "correct": false },
+          { "id": 3, "label": "C", "text": "Mobile", "correct": false },
+          { "id": 4, "label": "D", "text": "Browser", "correct": false }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Package manager default untuk Node.js adalah?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "npm", "correct": true },
+          { "id": 2, "label": "B", "text": "pip", "correct": false },
+          { "id": 3, "label": "C", "text": "composer", "correct": false },
+          { "id": 4, "label": "D", "text": "gem", "correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Module bawaan untuk membuat server HTTP di Node.js adalah?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "http", "correct": true },
+          { "id": 2, "label": "B", "text": "url", "correct": false },
+          { "id": 3, "label": "C", "text": "express", "correct": false },
+          { "id": 4, "label": "D", "text": "net", "correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Belajar Python",
+    "image": "https://cdn.activestate.com/wp-content/uploads/2021/12/python-coding-mistakes.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "text": "Fungsi untuk mencetak output di Python adalah?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "print()", "correct": true },
+          { "id": 2, "label": "B", "text": "echo()", "correct": false },
+          { "id": 3, "label": "C", "text": "write()", "correct": false },
+          { "id": 4, "label": "D", "text": "display()", "correct": false }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Tipe data untuk menyimpan nilai True atau False di Python adalah?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "bool", "correct": true },
+          { "id": 2, "label": "B", "text": "int", "correct": false },
+          { "id": 3, "label": "C", "text": "str", "correct": false },
+          { "id": 4, "label": "D", "text": "list", "correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Struktur pengulangan di Python yang benar adalah?",
+        "answers": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "for i in range(5):",
+            "correct": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "for(i=0;i<5;i++)",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "foreach i in range(5)",
+            "correct": false
+          },
+          { "id": 4, "label": "D", "text": "loop i=0 to 5", "correct": false }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Bagaimana cara membuat komentar satu baris di Python?",
+        "answers": [
+          { "id": 1, "label": "A", "text": "# Ini komentar", "correct": true },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "// Ini komentar",
+            "correct": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "<!-- Ini komentar -->",
+            "correct": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "/* Ini komentar */",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  }
+]
